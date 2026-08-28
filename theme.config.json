@@ -3,7 +3,7 @@
   "name": "Acuy's MUGEN Hub",
   "description": "Character movesets, and custom stage downloads.",
   "favicon": "/ditto.png",
-  "docsBase": "/",
+  "docsBase": "/mugen-guide/",
   "siteNav": [
     { "label": "Characters", "href": "/overview/" },
     { "label": "Stages", "href": "/stages/" }
