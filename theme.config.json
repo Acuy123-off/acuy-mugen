@@ -1,12 +1,12 @@
 {
-  "$schema": "https://astro-theme-lotus.prosefly.dev/schema.json",
+  "$schema": "https://prosefly.dev/schema/lotus.json",
   "name": "Acuy's MUGEN Hub",
   "description": "Character movesets, and custom stage downloads.",
-  "favicon": "/mugen-guide/ditto.png",
+  "favicon": "/ditto.png",
   "docsBase": "/mugen-guide/",
   "siteNav": [
-    { "label": "Characters", "href": "/mugen-guide/overview/" },
-    { "label": "Stages", "href": "/mugen-guide/stages/" }
+    { "label": "Characters", "href": "/overview/" },
+    { "label": "Stages", "href": "/stages/" }
   ],
   "search": {
     "provider": "local"
@@ -17,34 +17,25 @@
   },
   "editLink": true,
   "docsNav": [
-    {
-      "label": "Roster Hub",
-      "icon": "lucide:users",
-      "items": [
-        "index",
-        "overview",
-        "input"
-      ]
-    },
-    {
-      "label": "Characters",
-      "icon": "lucide:user",
-      "items": [
-        {
-          "autogenerate": {
-            "directory": "characters"
-          }
+  {
+    "label": "Roster Hub",
+    "icon": "lucide:users",
+    "items": [
+      "overview"
+    ]
+  },
+  {
+    "label": "Stages",
+    "icon": "lucide:map-pin",
+    "items": [
+      {
+        "autogenerate": {
+          "directory": "stages"
         }
-      ]
-    },
-    {
-      "label": "Stages",
-      "icon": "lucide:map-pin",
-      "items": [
-        "stages"
-      ]
-    }
-  ],
+      }
+    ]
+  }
+],
   "footer": {
     "copyright": "Copyright © 2026 Acuy123.",
     "sections": [
