@@ -3,10 +3,10 @@
   "name": "Acuy's MUGEN Hub",
   "description": "Character movesets, and custom stage downloads.",
   "favicon": "/ditto.png",
-  "docsBase": "/mugen-guide/",
+  "docsBase": "/",
   "siteNav": [
-    { "label": "Characters", "href": "/overview/" },
-    { "label": "Stages", "href": "/stages/" }
+    { "label": "Characters", "href": "/acuy-mugen/overview/" },
+    { "label": "Stages", "href": "/acuy-mugen/stages/" }
   ],
   "search": {
     "provider": "local"
@@ -17,25 +17,34 @@
   },
   "editLink": true,
   "docsNav": [
-  {
-    "label": "Roster Hub",
-    "icon": "lucide:users",
-    "items": [
-      "overview"
-    ]
-  },
-  {
-    "label": "Stages",
-    "icon": "lucide:map-pin",
-    "items": [
-      {
-        "autogenerate": {
-          "directory": "stages"
+    {
+      "label": "Roster Hub",
+      "icon": "lucide:users",
+      "items": [
+        "index",
+        "overview",
+        "input"
+      ]
+    },
+    {
+      "label": "Characters",
+      "icon": "lucide:user",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "characters"
+          }
         }
-      }
-    ]
-  }
-],
+      ]
+    },
+    {
+      "label": "Stages",
+      "icon": "lucide:map-pin",
+      "items": [
+        "stages"
+      ]
+    }
+  ],
   "footer": {
     "copyright": "Copyright © 2026 Acuy123.",
     "sections": [
