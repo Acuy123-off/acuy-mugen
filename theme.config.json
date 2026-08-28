@@ -12,7 +12,7 @@
     "provider": "local"
   },
   "source": {
-    "github": "Acuy123-off/mugen-guide",
+    "github": "Acuy123-off/acuy-mugen",
     "branch": "main"
   },
   "editLink": true,
@@ -21,9 +21,7 @@
       "label": "Roster Hub",
       "icon": "lucide:users",
       "items": [
-        "index",
-        "overview",
-        "input"
+        "overview"
       ]
     },
     {
