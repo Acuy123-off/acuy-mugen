@@ -1,112 +1,61 @@
 {
   "$schema": "https://prosefly.dev/schema/lotus.json",
-  "name": "Lotus Starter",
-  "description": "Documentation built with Astro Theme Lotus.",
-  "favicon": "/favicon.svg",
+  "name": "Acuy's MUGEN Hub",
+  "description": "Character movesets, and custom stage downloads.",
+  "favicon": "/ditto.png",
   "docsBase": "/",
   "siteNav": [
-    {
-      "label": "Docs",
-      "href": "/overview/"
-    },
-    {
-      "label": "Theme",
-      "href": "https://astro-theme-lotus.prosefly.dev",
-      "external": true,
-      "trailingIcon": "lucide:arrow-up-right"
-    }
-  ],
-  "socials": [
-    {
-      "label": "GitHub",
-      "href": "https://github.com/prosefly/astro-template-lotus-starter",
-      "external": true,
-      "icon": "github"
-    }
+    { "label": "Characters", "href": "/overview/" },
+    { "label": "Stages", "href": "/stages/" }
   ],
   "search": {
     "provider": "local"
   },
   "source": {
-    "github": "prosefly/astro-template-lotus-starter",
+    "github": "Acuy123-off/mugen-guide",
     "branch": "main"
   },
   "editLink": true,
   "docsNav": [
-    {
-      "label": "Start Here",
-      "icon": "lucide:rocket",
-      "items": [
-        "overview",
-        "installation",
-        "customization"
-      ]
-    },
-    {
-      "label": "Guides",
-      "icon": "lucide:book-open",
-      "items": [
-        {
-          "autogenerate": {
-            "directory": "guides"
-          }
+  {
+    "label": "Roster Hub",
+    "icon": "lucide:users",
+    "items": [
+      "overview"
+    ]
+  },
+  {
+    "label": "Stages",
+    "icon": "lucide:map-pin",
+    "items": [
+      {
+        "autogenerate": {
+          "directory": "stages"
         }
-      ]
-    }
-  ],
+      }
+    ]
+  }
+],
   "footer": {
-    "copyright": "Copyright © 2026 Prosefly.",
+    "copyright": "Copyright © 2026 Acuy123.",
     "sections": [
       {
         "title": "Project",
         "links": [
           {
-            "label": "Documentation",
-            "href": "https://astro-theme-lotus.prosefly.dev/docs/overview/"
-          },
-          {
-            "label": "Theme Source",
-            "href": "https://github.com/prosefly/astro-theme-lotus",
+            "label": "Acuy123 Creations",
+            "href": "https://acuy123-off.github.io/Acuy123-Creations/",
             "external": true
-          }
+          },
           {
-            "label": "Template Source",
-            "href": "https://github.com/prosefly/astro-template-lotus-starter",
+            "label": "Acuy123 Dashboard",
+            "href": "https://acuy123-off.github.io/",
             "external": true
-          }
-        ]
-      },
-      {
-        "title": "Prosefly Projects",
-        "links": [
-          {
-            "label": "Astro Theme Lotus",
-            "href": "https://prosefly.dev/themes/lotus/"
           },
           {
-            "label": "Astro Theme Dahlia",
-            "href": "https://prosefly.dev/themes/dahlia/"
-          },
-          {
-            "label": "Astro Components",
-            "href": "https://prosefly.dev/docs/astro-components/"
-          }
-        ]
-      },
-      {
-        "title": "Community",
-        "links": [
-          {
-            "label": "GitHub",
-            "href": "https://github.com/prosefly"
-          },
-          {
-            "label": "X (Twitter)",
-            "href": "https://x.com/prosefly"
-          },
-          {
-            "label": "Sponsors",
-            "href": "https://prosefly.dev/sponsors/"
+            "label": "WTTD Demo",
+            "href": "https://acuy123-off.github.io/WTTD-Demo/",
+            "external": true
           }
         ]
       }

@@ -1,39 +1,56 @@
 ---
-title: Lotus Starter
-description: Start a documentation site with Astro Theme Lotus.
+title: Acuy's MUGEN Hub
+description: move lists and stage downloads for my MUGEN.
 template: splash
 pagefind: false
 sidebar:
   hidden: true
 hero:
-  title: Start building with Lotus
-  tagline: A minimal Astro documentation starter with routing, navigation, search, and theme configuration already wired up.
+  title: Welcome to Acuy MUGEN Hub
+  tagline: Character guides and stage downloads.
   actions:
-    - text: Install
-      link: /installation/
+    - text: View Roster
+      link: /overview/
       variant: primary
-      icon: lucide:terminal
-    - text: Customize
-      link: /customization/
-      variant: secondary
-      icon: lucide:palette
+      icon: lucide:swords
+    - text: Download stages
+      link: /stages/
+      variant: primary
+      icon: lucide:map-pin
 ---
 
-Lotus turns Astro content collections into a complete documentation site. This
-starter keeps the project small so you can see every moving part.
+## Gameplay :
+export const RandomBlurredScreenshot = () => {
+  const screenshots = [
+    '/screenshots/gameplay-1.jpeg',
+    '/screenshots/gameplay-2.jpeg',
+    '/screenshots/gameplay-3.png',
+    '/screenshots/gameplay-4.png',
+    '/screenshots/gameplay-5.png',
+  ];
+  const randomImg = screenshots[Math.floor(Math.random() * screenshots.length)];
+  return (
+    <div className="relative mt-8 overflow-hidden rounded-xl border border-zinc-800 bg-black p-4 flex items-center justify-center min-h-[350px]">
+      {/* Blurred Background Layer */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center blur-4xl scale-125 opacity-50"
+        style={{ backgroundImage: `url('${randomImg}')` }}
+      />
 
-## What Is Included
+      {/* Crisp Main Screenshot Layer */}
+      <img 
+        src={randomImg} 
+        alt="Random MUGEN Gameplay" 
+        className="relative z-10 max-h-[750px] w-full rounded-md shadow-2xl object-contain"
+      />
+    </div>
+  );
+};
 
-- Astro v7 project configuration
-- Lotus integration setup
-- MDX docs collection
-- Sidebar navigation
-- Local search
-- Source and edit links
+<RandomBlurredScreenshot />
+<p><i>*note : the gameplay image is random</i></p>
 
-## Next Steps
-
-1. Update `theme.config.json` with your project name and links.
-2. Open the documentation at `/overview/`.
-3. Replace the example pages in `src/content/docs`.
-4. Run `pnpm build` before deploying.
+## Cangelog :
+### 8/28/26
+- <b>Site Launched.</b>
+- <b>Matt Has been added, but Still Unfinished.</b>

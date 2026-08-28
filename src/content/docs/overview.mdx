@@ -1,29 +1,23 @@
 ---
-title: Overview
-description: Learn how the Lotus starter is organized.
+title: Character Roster
+description: Select a fighter to view their move list.
 sidebar:
   order: 1
 ---
 
-This starter is a small Astro documentation project with Lotus already wired
-up. Use it when you want to start writing docs instead of assembling routing,
-navigation, search, and theme configuration from scratch.
+<img src="/misc/input.png" alt="input" />
+<p><i>*^Make sure to Remember this one^</i></p>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 not-prose">
 
-## Project Files
+  {/* Character 1 */}
+  <a href="/characters/matt/" className="flex items-center bg-zinc-900 border border-zinc-800 hover:border-zinc-500 p-3 rounded gap-4 no-underline text-white transition">
+    <img src="/avatars/matt.png" alt="matt" className="w-20 h-20 object-cover rounded m-0 shrink-0" />
+    <div>
+      <h3 className="text-lg font-bold uppercase m-0 leading-tight text-white">Matt</h3>
+    </div>
+  </a>
 
-- `astro.config.ts` registers the Lotus integration.
-- `theme.config.json` configures navigation, docs navigation, search, and footer links.
-- `src/content.config.ts` registers the docs content collection.
-- `src/content/docs` contains MDX pages rendered from the site root.
 
-## Homepage
+  {/* Add more character cards here */}
 
-The starter sets `docsBase: '/'`, so `src/content/docs/index.mdx` renders at
-`/` as a splash page. The docs entry page is this page, rendered at
-`/overview/`.
-
-## Next Steps
-
-1. Update the project name and links in `theme.config.json`.
-2. Replace the example pages in `src/content/docs`.
-3. Run `pnpm check` and `pnpm build` before deploying.
+</div>
