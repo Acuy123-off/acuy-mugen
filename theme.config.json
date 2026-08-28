@@ -21,18 +21,27 @@
       "label": "Roster Hub",
       "icon": "lucide:users",
       "items": [
-        "overview"
+        "index",
+        "overview",
+        "input"
+      ]
+    },
+    {
+      "label": "Characters",
+      "icon": "lucide:user",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "characters"
+          }
+        }
       ]
     },
     {
       "label": "Stages",
       "icon": "lucide:map-pin",
       "items": [
-        {
-          "autogenerate": {
-            "directory": "stages"
-          }
-        }
+        "stages"
       ]
     }
   ],
