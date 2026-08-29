@@ -2,7 +2,7 @@
   "$schema": "https://prosefly.dev/schema/lotus.json",
   "name": "Acuy's MUGEN Hub",
   "description": "Character movesets, and custom stage downloads.",
-  "favicon": "/ditto.png",
+  "favicon": "/acuy-mugen/ditto.png",
   "docsBase": "/",
   "siteNav": [
     { "label": "Characters", "href": "/acuy-mugen/overview/" },
@@ -15,31 +15,20 @@
     "github": "Acuy123-off/acuy-mugen",
     "branch": "main"
   },
-  "editLink": true,
+  "editLink": false,
   "docsNav": [
     {
       "label": "Roster Hub",
       "icon": "lucide:users",
       "items": [
-        "overview"
-      ]
-    },
-    {
-      "label": "Characters",
-      "icon": "lucide:user",
-      "items": [
-        {
-          "autogenerate": {
-            "directory": "characters"
-          }
-        }
+        "/acuy-mugen/overview"
       ]
     },
     {
       "label": "Stages",
       "icon": "lucide:map-pin",
       "items": [
-        "stages"
+        "/acuy-mugen/stages"
       ]
     }
   ],
